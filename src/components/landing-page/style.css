@@ -1,0 +1,290 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.particles-container {
+  position: absolute;
+  z-index: 10;
+}
+.logo {
+  font-size: large;
+  font-weight: bold;
+}
+.hero {
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  background-color: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.text-primary {
+  color: #6b7dff !important;
+}
+
+.btn-dark {
+  background-color: #000000;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #444;
+}
+
+.content-wrapper {
+  display: flex;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.image-section {
+  flex: 0 0 40%;
+}
+
+.info-section {
+  flex: 1;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+.text-color {
+  color: #4064de;
+}
+
+.content-title {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* General styles for about-content */
+
+.about-content {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  padding: 20px; /* Add some padding for content */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for about-content */
+.about-content:hover {
+  transform: translateY(-10px); /* Slight lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Paragraph style */
+.about-content p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.bootcamp-container {
+  font-family: Arial, sans-serif;
+  padding: 50px 20px;
+}
+
+.bootcamp-title {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.bootcamp-description {
+  font-size: 1rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bootcamp-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bootcamp-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bootcamp-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.bootcamp-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bootcamp-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.bootcamp-card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #5b6cfe;
+}
+
+.bootcamp-card-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.services-section {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.services-title {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: #00cc66;
+  margin: 0 auto 30px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%; /* Đảm bảo card kéo giãn theo cột */
+  transition: all 0.3s ease;
+  height: 150px; /* Đồng bộ chiều cao card */
+}
+
+.service-card:hover {
+  transform: translateY(-4px); /* Hiệu ứng hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon của Service */
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px; /* Khoảng cách giữa icon và text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tên Service */
+.service-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: left; /* Căn trái text để nằm thẳng hàng */
+}
+
+/* Nút Read More */
+.read-more-container {
+  margin-top: 30px;
+}
+
+.read-more-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.cta-button1 {
+  background-color: #0d6efd; /* Màu nền */
+  color: #ffffff; /* Màu chữ */
+  border: none; /* Loại bỏ viền */
+  border-radius: 8px; /* Bo góc */
+  padding: 12px 24px; /* Khoảng cách trong */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: bold; /* In đậm */
+  text-transform: uppercase; /* Viết hoa chữ */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  transition: all 0.3s ease; /* Hiệu ứng hover */
+}
+
+.cta-button1:hover {
+  background-color: #0056b3; /* Màu nền khi hover */
+  transform: scale(1.05); /* Phóng to nhẹ */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Đổ bóng lớn hơn */
+}
+
+.cta-button1:focus {
+  outline: none; /* Loại bỏ khung outline khi focus */
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.5); /* Viền focus */
+}
