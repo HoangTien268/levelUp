@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./style.css";
 import servicesData from "./servicesData";
+import Snowfall from "react-snowfall";
 const LandingPage = () => {
   useEffect(() => {
     setTimeout(() => {
@@ -41,16 +42,13 @@ const LandingPage = () => {
             </span>
           </div>
           <nav className="nav">
-            <a href="#home" className="nav-link ">
+            <a href="#home" className="nav-link text-black">
               Trang chủ
             </a>
-            <a href="#team" className="nav-link ">
-              Về chúng tôi
-            </a>
-            <a href="#case-studies" className="nav-link ">
+            <a href="#case-studies" className="nav-link text-black ">
               Dịch vụ
             </a>
-            <a href="#contact" className="nav-link ">
+            <a href="#contact" className="nav-link text-black">
               Liên hệ
             </a>
           </nav>
@@ -60,6 +58,16 @@ const LandingPage = () => {
           className="hero text-center  d-flex flex-column justify-content-center align-items-center bg-secondary"
           id="home"
         >
+          <Snowfall
+            style={{
+              position: "fixed",
+              width: "100vw",
+              height: "100vh",
+              zIndex: 0, // Đặt phía sau nội dung
+            }}
+            color="white" // Màu tuyết
+            snowflakeCount={300} // Số lượng tuyết
+          />
           <div className="title">
             <img
               src={require("../../assets/images/background.png")}
@@ -69,7 +77,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div>
+        <div style={{position:"relative"}}>
           <div
             className="features text-center  animate-on-scroll"
             style={{ padding: "30px 10%" }}
@@ -282,15 +290,21 @@ const LandingPage = () => {
           </div>
 
           <div
-            className="text-center  animate-on-scroll"
+            className="text-center"
             style={{
               margin: "30px 10%",
               padding: "6% 8%",
             }}
           >
             <h2 className="mb-4 display-6 fw-bold slogan">
-              <span className="highlight text-success">LevelUp</span>- Bệ phóng
-              cho sinh viên chinh phục cơ hội thực tập và việc làm mơ ước!
+              <span className="highlight">
+                Level
+                <span className="highlight" style={{ color: "#003366" }}>
+                  UP
+                </span>
+              </span>
+              - Bệ phóng cho sinh viên chinh phục cơ hội thực tập và việc làm mơ
+              ước!
             </h2>
             <div className="cta mt-5 rounded mt-4">
               <button className="cta-button1">Liên hệ với chúng tôi</button>
@@ -305,9 +319,6 @@ const LandingPage = () => {
             <div className="d-flex gap-3">
               <a href="#home" className="nav-link ">
                 Trang chủ
-              </a>
-              <a href="#team" className="nav-link ">
-                Về chúng tôi
               </a>
               <a href="#case-studies" className="nav-link ">
                 Dịch vụ

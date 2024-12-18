@@ -97,24 +97,20 @@ p {
   font-weight: bold;
 }
 
-/* General styles for about-content */
-
 .about-content {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
-  padding: 20px; /* Add some padding for content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect for about-content */
 .about-content:hover {
-  transform: translateY(-10px); /* Slight lift effect */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
 }
 
-/* Paragraph style */
 .about-content p {
   color: #6c757d;
   line-height: 1.6;
@@ -211,47 +207,43 @@ p {
   gap: 20px;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 100%; /* Đảm bảo card kéo giãn theo cột */
+  width: 100%; 
   transition: all 0.3s ease;
-  height: 150px; /* Đồng bộ chiều cao card */
+  height: 150px;
 }
 
 .service-card:hover {
-  transform: translateY(-4px); /* Hiệu ứng hover */
+  transform: translateY(-4px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon của Service */
 .service-icon {
   width: 50px;
   height: 50px;
-  margin-right: 15px; /* Khoảng cách giữa icon và text */
+  margin-right: 15px; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Tên Service */
 .service-title {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
-  text-align: left; /* Căn trái text để nằm thẳng hàng */
+  text-align: left; 
 }
 
-/* Nút Read More */
 .read-more-container {
   margin-top: 30px;
 }
 
 .read-more-btn {
-  background-color: #007bff;
+  background-color: #003366;
   color: white;
   border: none;
   border-radius: 5px;
@@ -266,25 +258,25 @@ p {
 }
 
 .cta-button1 {
-  background-color: #0d6efd; /* Màu nền */
-  color: #ffffff; /* Màu chữ */
-  border: none; /* Loại bỏ viền */
-  border-radius: 8px; /* Bo góc */
-  padding: 12px 24px; /* Khoảng cách trong */
-  font-size: 16px; /* Kích thước chữ */
-  font-weight: bold; /* In đậm */
-  text-transform: uppercase; /* Viết hoa chữ */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
-  transition: all 0.3s ease; /* Hiệu ứng hover */
+  background-color: #003366; 
+  color: #ffffff; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 12px 24px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; 
 }
 
 .cta-button1:hover {
-  background-color: #0056b3; /* Màu nền khi hover */
-  transform: scale(1.05); /* Phóng to nhẹ */
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Đổ bóng lớn hơn */
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .cta-button1:focus {
-  outline: none; /* Loại bỏ khung outline khi focus */
-  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.5); /* Viền focus */
+  outline: none; 
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.5);
 }
