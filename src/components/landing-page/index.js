@@ -43,13 +43,13 @@ const LandingPage = () => {
           </div>
           <nav className="nav">
             <a href="#home" className="nav-link text-black">
-              Trang chủ
+              Home
             </a>
             <a href="#case-studies" className="nav-link text-black ">
-              Dịch vụ
+              Services
             </a>
             <a href="#contact" className="nav-link text-black">
-              Liên hệ
+              Contact
             </a>
           </nav>
         </div>
@@ -63,10 +63,10 @@ const LandingPage = () => {
               position: "fixed",
               width: "100vw",
               height: "100vh",
-              zIndex: 0, // Đặt phía sau nội dung
+              zIndex: 0,
             }}
-            color="white" // Màu tuyết
-            snowflakeCount={300} // Số lượng tuyết
+            color="white"
+            snowflakeCount={300}
           />
           <div className="title">
             <img
@@ -77,7 +77,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div style={{position:"relative"}}>
+        <div style={{ position: "relative" }}>
           <div
             className="features text-center  animate-on-scroll"
             style={{ padding: "30px 10%" }}
@@ -94,6 +94,7 @@ const LandingPage = () => {
                       <span className="highlight" style={{ color: "#003366" }}>
                         UP
                       </span>
+                      ?
                     </span>
                   </div>
                   <div className="underline"></div>
@@ -303,11 +304,10 @@ const LandingPage = () => {
                   UP
                 </span>
               </span>
-              - Bệ phóng cho sinh viên chinh phục cơ hội thực tập và việc làm mơ
-              ước!
+              - Launchpad for students to conquer dream internships and careers!
             </h2>
             <div className="cta mt-5 rounded mt-4">
-              <button className="cta-button1">Liên hệ với chúng tôi</button>
+              <button className="cta-button1">Call to action</button>
             </div>
           </div>
 
@@ -318,13 +318,13 @@ const LandingPage = () => {
           >
             <div className="d-flex gap-3">
               <a href="#home" className="nav-link ">
-                Trang chủ
+                Home
               </a>
               <a href="#case-studies" className="nav-link ">
-                Dịch vụ
+                Services
               </a>
               <a href="#contact" className="nav-link ">
-                Liên hệ
+                Contact
               </a>
             </div>
             <div className="social-icons ">
